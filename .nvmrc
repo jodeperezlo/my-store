@@ -3,9 +3,4 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-.box {
-	height: 200px;
-	width: 200px;
-	overflow: auto;
-	background-color: darkslategrey;
-}
+// v16.13.0
