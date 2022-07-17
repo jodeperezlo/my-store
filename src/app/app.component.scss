@@ -1,11 +1,22 @@
-// Copyright (c) 2022 Jorge de Jesus Perez Lopez
-//
-// This software is released under the MIT License.
-// https://opensource.org/licenses/MIT
-
 .box {
 	height: 200px;
 	width: 200px;
 	overflow: auto;
 	background-color: darkslategrey;
+}
+
+.products-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+	grid-gap: 1rem;
+	div {
+		img {
+			width: 100%;
+			border-radius: 10px;
+		}
+		h2,
+		p {
+			margin: 0;
+		}
+	}
 }

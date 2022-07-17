@@ -1,3 +1,28 @@
+<h1>*ngSwitch</h1>
+
+<div [ngSwitch]="color">
+	<p *ngSwitchCase="'azul'">El color es Azul</p>
+	<p *ngSwitchCase="'verde'">El color es Verde</p>
+	<p *ngSwitchCase="'rojo'">El color es Rojo</p>
+	<p *ngSwitchDefault>No hay ningún color</p>
+</div>
+
+<hr />
+<br />
+
+<h1>*ngFor Objects</h1>
+
+<div class="products-grid">
+	<div *ngFor="let product of products">
+		<img [src]="product.image" [alt]="product.name" />
+		<p>{{ product.price }}</p>
+		<h2>{{ product.name }}</h2>
+	</div>
+</div>
+
+<hr />
+<br />
+
 <h1>*ngFor</h1>
 
 <input type="text" required [(ngModel)]="inputName" />
@@ -91,4 +116,4 @@
 
 <h3>Hola soy {{ name }}, tengo {{ age }} años.</h3>
 
-<img src="{{ img }}" alt="Platzi" width="500" />
+<img src="{{ img }}" alt="Platzi" width="200" />
